@@ -7,7 +7,8 @@ imports:
         git:    https://github.com/MeshGeometry/fips-eigen.git
 exports:
     header-dirs: 
-      - .
+      - libShapeOp/src
+      - libShapeOp/api
     modules:
       shapeop: .
 
