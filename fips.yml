@@ -2,9 +2,7 @@
 # fips-shapeop
 #
 ---
-imports:
-    eigen:
-        git:    https://github.com/MeshGeometry/fips-eigen.git
+
 exports:
     header-dirs: 
       - libShapeOp/src
