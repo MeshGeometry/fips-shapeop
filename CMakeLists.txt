@@ -13,6 +13,7 @@ if ((FIPS_MACOS OR FIPS_WINDOWS OR FIPS_LINUX) AND NOT (FIPS_RASPBERRYPI OR FIPS
     include_directories(
         "libShapeOp/src"
         "libShapeOp/api"
+        "${FIPS_ROOT_DIR}/../libigl/libigl/external/eigen"
         )
     fips_files(
         "libShapeOp/src/Common.h"
