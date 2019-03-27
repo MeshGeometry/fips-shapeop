@@ -19,6 +19,8 @@ if ((FIPS_MACOS OR FIPS_WINDOWS OR FIPS_LINUX) AND NOT (FIPS_RASPBERRYPI OR FIPS
         "libShapeOp/src/Common.h"
         "libShapeOp/src/Constraint.h"
         "libShapeOp/src/Constraint.cpp"
+        "libShapeOp/src/Solver.h"
+        "libShapeOp/src/Solver.cpp"
         "libShapeOp/src/Force.h"
         "libShapeOp/src/Force.cpp"
         "libShapeOp/src/LSSolver.h"
