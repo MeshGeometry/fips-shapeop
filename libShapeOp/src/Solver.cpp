@@ -59,7 +59,7 @@ SHAPEOP_INLINE void Solver::setDamping(Scalar damping) {
   damping_ = damping;
 }
 ///////////////////////////////////////////////////////////////////////////////
-SHAPEOP_INLINE const Matrix3X &Solver::getPoints() {
+SHAPEOP_INLINE const Matrix3X &Solver::getPoints() const {
   return points_;
 }
 ///////////////////////////////////////////////////////////////////////////////

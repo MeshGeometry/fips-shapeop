@@ -45,7 +45,7 @@ class SHAPEOP_API Solver {
   /** \brief Set the velocity damping for the dynamics.*/
   void setDamping(Scalar damping);
   /** \brief Get the points.*/
-  const Matrix3X &getPoints();
+  const Matrix3X &getPoints() const;
   /** \brief Initialize the ShapeOp linear system and the different parameters.
   \return true if successfull */
   bool initialize(bool dynamic = false, Scalar masses = 1.0, Scalar damping = 1.0, Scalar timestep = 1.0);
