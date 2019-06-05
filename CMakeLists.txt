@@ -10,6 +10,10 @@ if ((FIPS_MACOS OR FIPS_WINDOWS OR FIPS_LINUX) AND NOT (FIPS_RASPBERRYPI OR FIPS
 
      fips_begin_lib(libShapeOp)
 
+    if (MSVC)
+        add_compile_options(/D_ENABLE_EXTENDED_ALIGNED_STORAGE) # Fix for newer versions of MSVC
+    endif()
+
     include_directories(
         "libShapeOp/src"
         "libShapeOp/api"
