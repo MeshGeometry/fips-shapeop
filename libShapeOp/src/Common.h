@@ -28,7 +28,7 @@ typedef SHAPEOP_SCALAR ShapeOpScalar;
 #ifdef SHAPEOP_EXPORT
 #define SHAPEOP_API __declspec(dllexport)
 #else
-#define SHAPEOP_API __declspec(dllimport)
+#define SHAPEOP_API //__declspec(dllimport)
 #endif
 #else
 #define SHAPEOP_API
