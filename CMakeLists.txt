@@ -72,8 +72,9 @@ if ((FIPS_MACOS OR FIPS_WINDOWS OR FIPS_LINUX) AND NOT (FIPS_RASPBERRYPI OR FIPS
         set(OPENMP ON CACHE BOOL "OpenMP")
     endif()
 
-
-    FIND_PACKAGE(OpenMP QUIET)
+    if (!FIPS_LINUX) # Having a hard time getting this working on linux
+        FIND_PACKAGE(OpenMP QUIET)
+    endif()
     if(OPENMP_FOUND)
       message("OpenMP found. OpenMP activated in release.")
       set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} ${OpenMP_CXX_FLAGS}")
